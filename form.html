@@ -12,49 +12,51 @@
         <form action="">
             <fieldset>
                 <legend><b>Formulário de Clientes</b></legend>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <input type="text" name="name" id="name" class="inputUser" required>
-                    <label for="name">Nome Completo</label>
+                    <label for="name" class="labelInput">Nome Completo</label>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
-                    <input type="email" name="email" id="email" class="inputUser" required>
-                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <input type="tel" name="tel" id="tel" class="inputUser" required>
-                    <label for="tel">Telefone</label>
+                    <label for="tel" class="labelInput">Telefone</label>
                 </div>
                 <p>Sexo</p>
                 <input type="radio" id="feminino" name="sexo" value="feminino" required>
                 <label for="feminino">Feminino</label>
+                <br>
                 <input type="radio" id="masculino" name="sexo" value="masculino" required>
                 <label for="masculino">Masculino</label>
+                <br>
                 <input type="radio" id="outro" name="sexo" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <div class="inputBox">
-                    <label for="date_of_birth"><b>Data de Nascimento</b></label>
-                    <input type="date" name="date_of_birth" id="date_of_birth" class="inputUser" required>
-                </div>
-                <br>
+                    <div class="date">
+                        <label for="date_of_birth"><b>Data de Nascimento</b></label>
+                        <input type="date" name="date_of_birth" id="date_of_birth" required>
+                    </div>
+                <br><br>
                 <div class="inputBox">
                     <input type="text" name="city" id="city" class="inputUser" required>
-                    <label for="city"><b>Cidade</b></label>
+                    <label for="city" class="labelInput"><b>Cidade</b></label>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <input type="text" name="state" id="state" class="inputUser" required>
-                    <label for="state"><b>Estado</b></label>
+                    <label for="state" class="labelInput"><b>Estado</b></label>
                 </div>
-                <br>
+                <br><br>
                 <div class="inputBox">
                     <input type="text" name="address" id="address" class="inputUser" required>
-                    <label for="address"><b>Endereço</b></label>
+                    <label for="address" class="labelInput"><b>Endereço</b></label>
                 </div>
-                <br>
+                <br><br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
