@@ -1,3 +1,23 @@
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        include_once('config.php');
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $tel = $_POST['tel'];
+        $gender = $_POST['sexo'];
+        $birth = $_POST['date_of_birth'];
+        $city = $_POST['city'];
+        $state = $_POST['state'];
+        $address = $_POST['address'];
+
+        $result = mysqli_query($connection, "INSERT INTO users(name,email,tel,gender,birth,city,state,address) VALUES ('$name','$email','$tel','$gender','$birth','$city','$state','$address')");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +29,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="form.php" method="POST">
             <fieldset>
                 <legend><b>Formulário de Clientes</b></legend>
                 <br><br>
@@ -41,7 +61,7 @@
                         <label for="date_of_birth"><b>Data de Nascimento</b></label>
                         <input type="date" name="date_of_birth" id="date_of_birth" required>
                     </div>
-                <br><br>
+                <br>
                 <div class="inputBox">
                     <input type="text" name="city" id="city" class="inputUser" required>
                     <label for="city" class="labelInput"><b>Cidade</b></label>
@@ -56,7 +76,7 @@
                     <input type="text" name="address" id="address" class="inputUser" required>
                     <label for="address" class="labelInput"><b>Endereço</b></label>
                 </div>
-                <br><br>
+                <br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>

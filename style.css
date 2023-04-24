@@ -12,7 +12,7 @@ body{
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     border-radius: 10px;
-    width: 26%;
+    width: 28%;
 }
 
 fieldset{
@@ -65,7 +65,7 @@ legend{
     padding: 10px;
     border-radius: 10px;
     outline: none;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 #submit{
